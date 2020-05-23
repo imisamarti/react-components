@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import faker from 'faker';
 
 const App = () => {
 	return (
@@ -8,7 +9,7 @@ const App = () => {
 			<div class="ui container comments">
 				<div class="comment">
 					<a href="#" class="avatar">
-						<img alt="avatar" />
+						<img alt="avatar" src={faker.image.avatar()} />
 					</a>
 					<div class="content">
 					<a href="#" class="author">
@@ -27,7 +28,7 @@ const App = () => {
 
 				<div class="comment">
 					<a href="#" class="avatar">
-						<img alt="avatar" />
+						<img alt="avatar" src={faker.image.avatar()} />
 					</a>
 					<div class="content">
 					<a href="#" class="author">
@@ -46,7 +47,7 @@ const App = () => {
 
 				<div class="comment">
 					<a href="#" class="avatar">
-						<img alt="avatar" />
+						<img alt="avatar" src={faker.image.avatar()} />
 					</a>
 					<div class="content">
 					<a href="#" class="author">
