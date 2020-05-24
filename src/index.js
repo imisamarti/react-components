@@ -9,10 +9,26 @@ const App = () => {
 	return (
 		<div className="ui container comments">
 		
-		<CommentDetail avatar={faker.image.avatar()} author={faker.internet.userName()}  comment={faker.lorem.sentence()}/>
-		<CommentDetail avatar={faker.image.avatar()} author={faker.internet.userName()} comment={faker.lorem.sentence()}/>
+		<ApprovalCard>
+		<h4>Warning</h4>
+			Are you sure you want to do this?
+		</ApprovalCard>
 
 		<ApprovalCard>
+			<CommentDetail
+				avatar={faker.image.avatar()} 
+				author={faker.internet.userName()} 
+				comment={faker.lorem.sentence()}/>
+		</ApprovalCard>
+
+			<ApprovalCard>
+			<CommentDetail
+				avatar={faker.image.avatar()} 
+				author={faker.internet.userName()} 
+				comment={faker.lorem.sentence()}/>
+		</ApprovalCard>
+
+			<ApprovalCard>
 			<CommentDetail
 				avatar={faker.image.avatar()} 
 				author={faker.internet.userName()} 
